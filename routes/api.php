@@ -52,3 +52,14 @@ Route::middleware('auth:sanctum')->get('/me', function (Request $request) {
 });
 
 // force redeploy
+//FOR TESTING
+Route::get('/db-test', function () {
+    return response()->json([
+        'driver' => config('database.default'),
+        'host' => config('database.connections.mysql.host'),
+        'port' => config('database.connections.mysql.port'),
+        'database' => config('database.connections.mysql.database'),
+        'username' => config('database.connections.mysql.username'),
+    ]);
+});
+
