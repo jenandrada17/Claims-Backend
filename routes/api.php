@@ -62,5 +62,4 @@ Route::get('/db-test', function () {
         'username' => config('database.connections.mysql.username'),
     ]);
 });
-// redeploy
 
