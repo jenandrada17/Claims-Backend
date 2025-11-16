@@ -63,5 +63,3 @@ Route::get('/db-test', function () {
     ]);
 });
 
-
-// force redeploy
